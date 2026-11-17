@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="معرض أعمال مطور ويب — مشاريع، مهارات، وطرق التواصل.">
+  <title>مروان | مطور ويب وصانع أفكار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-work" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></symbol>
+    <symbol id="icon-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 15l1 2.5 2.5 1-2.5 1L19 22l-1-2.5-2.5-1 2.5-1L19 15Z"/></symbol>
+    <symbol id="icon-shop" viewBox="0 0 24 24"><path d="M3 10v11h18V10M2 10l2-7h16l2 7"/><path d="M2 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 21v-6h6v6"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M8 15l4-4 3 3 6-7"/><path d="M16 7h5v5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></symbol>
+    <symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.5-3.3 2 2 0 0 1 1.5-3.3H18a3 3 0 0 0 3-3A9 9 0 0 0 12 3Z"/><path d="M7.5 10h.01M10 7h.01M14 7h.01M17 10h.01"/></symbol>
+    <symbol id="icon-html" viewBox="0 0 24 24"><path d="m5 3 1.5 17L12 22l5.5-2L19 3H5Z"/><path d="M8 7h8l-.4 3H9l.3 3h6l-.5 4-2.8 1-2.8-1-.2-2"/></symbol>
+    <symbol id="icon-css" viewBox="0 0 24 24"><path d="m12 3 9 5v8l-9 5-9-5V8l9-5Z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="icon-js" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M14 16a2 2 0 0 0 4 0V9M6 14v2a2 2 0 0 0 4 0V9"/></symbol>
+    <symbol id="icon-git" viewBox="0 0 24 24"><circle cx="6" cy="4" r="2"/><circle cx="18" cy="20" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 6v10a4 4 0 0 0 4 4h6M8 6a4 4 0 0 0 4 4h4"/></symbol>
+    <symbol id="icon-figma" viewBox="0 0 24 24"><path d="M9 3h6a3 3 0 0 1 0 6H9a3 3 0 0 1 0-6Zm0 6h6a3 3 0 0 1 0 6H9a3 3 0 0 1 0-6Zm0 6h3a3 3 0 1 1-3-3"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-speed" viewBox="0 0 24 24"><path d="M5 19a9 9 0 1 1 14 0M12 13l4-5M8 19h8"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.2 15 3a13.4 13.4 0 0 0-7 0C5.5 1.2 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 18v4"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4 4h.01M4 8v12M9 20v-7a4 4 0 0 1 8 0v7M9 12V8"/></symbol>
+    <symbol id="icon-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="icon-api" viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m9 11 6-4M9 13l6 4"/></symbol>
+    <symbol id="icon-docker" viewBox="0 0 24 24"><path d="M3 14h17a5 5 0 0 1-5 6H9a6 6 0 0 1-6-6ZM5 10h3v3H5zM9 10h3v3H9zM13 10h3v3h-3zM9 6h3v3H9zM13 6h3v3h-3zM17 11c1-2 2-2 4-1"/></symbol>
+    <symbol id="icon-php" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="m6 15 2-6h3l-2 6M13 15l2-6h3l-2 6M14 12h4"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24"><path d="m5 11 2-5h10l2 5 2 2v5h-2M3 18H1v-5l2-2 2-5h10l2 5 2 2v5h-2M6 18h8"/><circle cx="6" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3a2 2 0 0 1 2 2v10H2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  </svg>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="القائمة الرئيسية">
+      <a class="brand" href="#home" aria-label="مروان، الصفحة الرئيسية">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>مروان <span class="brand-role">— مطور ويب</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#work"><svg class="icon"><use href="#icon-work"/></svg>المشاريع</a>
+        <a href="#about"><svg class="icon"><use href="#icon-person"/></svg>عنّي</a>
+        <a href="contact.html"><svg class="icon"><use href="#icon-mail"/></svg>التواصل</a>
+      </div>
+      <div class="availability"><svg class="icon"><use href="#icon-spark"/></svg><span>متاح لمشاريع جديدة</span></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy" data-reveal>
+        <div class="eyebrow"><svg class="icon"><use href="#icon-code"/></svg>مطور واجهات ويب مستقل</div>
+        <h1>أحوّل الأفكار<br>إلى <span>تجارب رقمية.</span></h1>
+        <p>أصمّم وأطوّر مواقع ويب عصرية، سريعة، وسهلة الاستخدام — من أول فكرة لحد آخر تفصيلة.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">
+            شوف مشاريعي
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+          <a class="button" href="contact.html"><svg class="icon"><use href="#icon-mail"/></svg>خلّينا نتكلم</a>
+        </div>
+        <div class="stats" aria-label="إحصائيات">
+          <div class="stat"><strong>+12</strong><span><svg class="icon"><use href="#icon-work"/></svg>مشروع مكتمل</span></div>
+          <div class="stat"><strong>+2</strong><span><svg class="icon"><use href="#icon-clock"/></svg>سنين خبرة</span></div>
+          <div class="stat"><strong>100%</strong><span><svg class="icon"><use href="#icon-spark"/></svg>شغف بالتفاصيل</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit-label one"><svg class="icon"><use href="#icon-spark"/></svg>بناء أفكارك</div>
+        <img class="hero-photo" src="WhatsApp%20Image%202026-09-13%20at%207.06.48%20PM%20(1).jpeg" alt="صورة مروان">
+        <div class="orbit-label two">
+          <svg class="icon"><use href="#icon-code"/></svg>
+          <span dir="ltr">HTML · CSS · JS</span>
+          <span class="backend-label" dir="ltr">Node.js · PHP</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-heading" data-reveal>
+          <div>
+            <div class="section-kicker"><svg class="icon"><use href="#icon-work"/></svg>01 / أعمال مختارة</div>
+            <h2>مشاريع بتتكلم عن نفسها.</h2>
+          </div>
+          <p>نماذج من شغل متنوع يجمع بين الشكل الحلو والتجربة العملية.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-shop">
+              <div class="shop-window" aria-hidden="true">
+                <div class="shop-top"><span>FORME</span><span>MENU&nbsp;&nbsp; BAG (0)</span></div>
+                <div class="shop-title">Objects for<br>everyday living.</div>
+                <div class="shop-products"><i></i><i></i><i></i></div>
+              </div>
+              <a class="project-open" href="projects/shop/index.html" aria-label="فتح مشروع فورم"><svg class="icon"><use href="#icon-work"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-shop"/></svg>فورم — متجر ديكور</h3><span class="project-number">01 / 06</span></div>
+              <p>متجر إلكتروني بواجهة بسيطة تخلّي اكتشاف المنتجات متعة.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-html"/></svg>HTML</span><span><svg class="icon"><use href="#icon-css"/></svg>CSS</span><span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-dash">
+              <div class="dash-window" aria-hidden="true">
+                <div class="dash-side"></div>
+                <div class="dash-content"><div class="dash-title">OVERVIEW / 2025</div><div class="dash-box"></div><div class="dash-box"></div><div class="dash-chart"></div></div>
+              </div>
+              <a class="project-open" href="projects/dashboard/index.html" aria-label="فتح مشروع مسار"><svg class="icon"><use href="#icon-chart"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-chart"/></svg>مسار — لوحة تحكم</h3><span class="project-number">02 / 06</span></div>
+              <p>لوحة بيانات تعرض الأرقام المهمة بوضوح وتسهّل متابعة الأداء.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span><span><svg class="icon"><use href="#icon-css"/></svg>CSS Grid</span><span><svg class="icon"><use href="#icon-chart"/></svg>Charts</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-mobile">
+              <div class="phone-screen" aria-hidden="true">
+                <div class="phone-head">يومك أحلى ☀</div>
+                <div class="phone-hero"></div>
+                <div class="phone-row"></div>
+                <div class="phone-row short"></div>
+                <div class="phone-row"></div>
+              </div>
+              <a class="project-open" href="projects/habits/index.html" aria-label="فتح مشروع يوم"><svg class="icon"><use href="#icon-phone"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-phone"/></svg>يوم — تطبيق عادات</h3><span class="project-number">03 / 06</span></div>
+              <p>تجربة عربية للموبايل تساعدك تبني عادات صغيرة وتستمر عليها.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-phone"/></svg>Responsive</span><span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span><span><svg class="icon"><use href="#icon-palette"/></svg>UI Design</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-brand">
+              <div class="brand-board" aria-hidden="true">
+                <div class="brand-type">nōva<small>STUDIO / BRAND SYSTEM</small></div>
+                <div class="brand-shapes"><i></i><i></i><i></i></div>
+              </div>
+              <a class="project-open" href="projects/studio/index.html" aria-label="فتح مشروع نوفا"><svg class="icon"><use href="#icon-palette"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-palette"/></svg>نوفا — موقع استوديو</h3><span class="project-number">04 / 06</span></div>
+              <p>موقع تعريفي لاستوديو إبداعي بهوية مميزة وحركة خفيفة.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-html"/></svg>HTML</span><span><svg class="icon"><use href="#icon-css"/></svg>CSS</span><span><svg class="icon"><use href="#icon-spark"/></svg>Animation</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-cars">
+              <img class="project-art-img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="سيارة رياضية حقيقية من مجموعة إيلان" loading="lazy" decoding="async">
+              <a class="project-open" href="projects/cars/index.html" aria-label="فتح مشروع إيلان للسيارات"><svg class="icon"><use href="#icon-car"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-car"/></svg>إيلان — سيارات فاخرة</h3><span class="project-number">05 / 06</span></div>
+              <p>تجربة فاخرة لاستكشاف السيارات وحجز تجربة قيادة.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-html"/></svg>HTML</span><span><svg class="icon"><use href="#icon-css"/></svg>CSS</span><span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span></div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-visual visual-studio">
+              <img class="project-art-img" src="projects/photostudio/images/portrait.svg" alt="صورة بورتريه فنية من استوديو فريم">
+              <a class="project-open" href="projects/photostudio/index.html" aria-label="فتح مشروع فريم لاستوديو التصوير"><svg class="icon"><use href="#icon-camera"/></svg><span>افتح المشروع</span></a>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><h3><svg class="icon"><use href="#icon-camera"/></svg>فريم — استوديو تصوير</h3><span class="project-number">06 / 06</span></div>
+              <p>معرض بصري أنيق لخدمات البورتريه والفعاليات والتصوير التجاري.</p>
+              <div class="tags"><span><svg class="icon"><use href="#icon-html"/></svg>HTML</span><span><svg class="icon"><use href="#icon-css"/></svg>CSS</span><span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-copy" data-reveal>
+          <div class="section-kicker"><svg class="icon"><use href="#icon-person"/></svg>02 / مين أنا؟</div>
+          <h2>مبرمج بيحب إن كل فكرة<br><span>تبقى حقيقة على أرض الواقع.</span></h2>
+          <p>أنا مروان، مطور ويب مهتم ببناء مواقع تجمع بين التصميم المريح والكود النضيف. بحب أحوّل الأفكار لشغل حقيقي، وأهتم إن الموقع يشتغل بسرعة وبشكل ممتاز على كل الشاشات.</p>
+          <p>لما أكون مش بكتب كود، غالبًا بتعلّم حاجة جديدة أو بدوّر على فنجان قهوة مظبوط.</p>
+        </div>
+        <div class="about-side" data-reveal>
+          <div class="skills-panel">
+            <h3><svg class="icon"><use href="#icon-code"/></svg>الأدوات اللي بشتغل بيها</h3>
+            <h4 class="skills-subtitle">Front end</h4>
+            <div class="skill-list">
+              <span><svg class="icon"><use href="#icon-html"/></svg>HTML5</span>
+              <span><svg class="icon"><use href="#icon-css"/></svg>CSS3</span>
+              <span><svg class="icon"><use href="#icon-js"/></svg>JavaScript</span>
+              <span><svg class="icon"><use href="#icon-phone"/></svg>Responsive UI</span>
+              <span><svg class="icon"><use href="#icon-git"/></svg>Git &amp; GitHub</span>
+              <span><svg class="icon"><use href="#icon-figma"/></svg>Figma</span>
+              <span><svg class="icon"><use href="#icon-check"/></svg>Accessibility</span>
+              <span><svg class="icon"><use href="#icon-speed"/></svg>Web Performance</span>
+            </div>
+            <h4 class="skills-subtitle">Backend</h4>
+            <div class="skill-list">
+              <span><svg class="icon"><use href="#icon-js"/></svg>Node.js</span>
+              <span><svg class="icon"><use href="#icon-server"/></svg>Express</span>
+              <span><svg class="icon"><use href="#icon-server"/></svg>Django</span>
+              <span><svg class="icon"><use href="#icon-php"/></svg>PHP</span>
+              <span><svg class="icon"><use href="#icon-php"/></svg>Laravel</span>
+            </div>
+            <h4 class="skills-subtitle">Databases &amp; APIs</h4>
+            <div class="skill-list">
+              <span><svg class="icon"><use href="#icon-database"/></svg>MySQL</span>
+              <span><svg class="icon"><use href="#icon-database"/></svg>PostgreSQL</span>
+              <span><svg class="icon"><use href="#icon-database"/></svg>MongoDB</span>
+              <span><svg class="icon"><use href="#icon-database"/></svg>Firebase</span>
+              <span><svg class="icon"><use href="#icon-api"/></svg>REST API</span>
+              <span><svg class="icon"><use href="#icon-api"/></svg>GraphQL</span>
+              <span><svg class="icon"><use href="#icon-docker"/></svg>Docker</span>
+              <span><svg class="icon"><use href="#icon-database"/></svg>Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap">
+        <div class="contact-box" data-reveal>
+          <div>
+            <div class="section-kicker"><svg class="icon"><use href="#icon-spark"/></svg>03 / الخطوة الجاية</div>
+            <h2>عندك فكرة؟ يلا ننفّذها.</h2>
+            <p>ابعتلي تفاصيل مشروعك، وأنا هرد عليك في أقرب وقت.</p>
+          </div>
+          <a class="button button-primary" href="contact.html">
+            افتح صفحة التواصل
+            <svg class="icon"><use href="#icon-mail"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> مبيعرفش يشتغل انا و التيم اللا ب فنجان القهوه ☕</span>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noreferrer"><svg class="icon"><use href="#icon-github"/></svg>GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><svg class="icon"><use href="#icon-linkedin"/></svg>LinkedIn ↗</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

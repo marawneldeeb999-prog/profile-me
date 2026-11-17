@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18192b">
+  <title>مسار — لوحة الأداء</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-icon">م</span> مَسار</a>
+      <p class="side-label">القائمة</p>
+      <a class="side-link active" href="#overview"><span>◫</span> نظرة عامة</a>
+      <a class="side-link" href="#reports"><span>⌁</span> التقارير</a>
+      <a class="side-link" href="#activity"><span>◷</span> النشاط</a>
+      <div class="side-bottom"><span class="avatar">م</span><span>مروان<br><small>مساحة العمل</small></span><span class="more">···</span></div>
+    </aside>
+    <main class="main" id="overview">
+      <header class="topbar">
+        <div class="page-title"><p class="crumb">مساحة العمل / <b>نظرة عامة</b></p><h1>صباح الخير، مروان <span>✦</span></h1></div>
+        <div class="top-actions">
+          <form class="search-box" id="product-search" role="search">
+            <button class="search-submit" type="submit" aria-label="بحث عن منتج">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            </button>
+            <input id="dashboard-search" type="search" placeholder="ابحث عن منتج..." aria-label="ابحث في المنتجات">
+          </form>
+          <div class="notification-wrap">
+            <button class="icon-button notification-button" id="notification-toggle" type="button" aria-label="الإشعارات" aria-expanded="false" aria-controls="notification-menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+              <span class="notification-badge" id="notification-count" aria-live="polite">5</span>
+            </button>
+            <div class="notification-menu" id="notification-menu" hidden>
+              <div class="notification-menu-head">
+                <b>الإشعارات <small id="unread-label"></small></b>
+                <button id="mark-all-read" type="button">تحديد الكل كمقروء</button>
+              </div>
+              <div class="notification-list" id="notification-list" aria-live="polite"></div>
+              <p class="notifications-empty" id="notifications-empty" hidden>مفيش إشعارات جديدة.</p>
+            </div>
+          </div>
+          <button class="date-button" type="button"><span aria-hidden="true">⌑</span> آخر ٧ أيام <span aria-hidden="true">⌄</span></button>
+          <div class="profile-button"><span class="avatar">م</span><span>مروان<small>مدير الحساب</small></span></div>
+        </div>
+      </header>
+      <section class="summary">
+        <div><p class="eyebrow">نظرة عامة</p><h2>أداؤك بيتحسن،<br>كمل بنفس الإيقاع.</h2><p class="summary-copy">ده ملخص نشاط مشروعك خلال الفترة المحددة.</p></div>
+        <div class="summary-art" role="img" aria-label="رسم توضيحي لبيانات صاعدة"><div class="art-circle"></div><svg viewBox="0 0 360 170" aria-hidden="true"><path class="area" d="M5 145 50 120 90 132 135 80 180 100 225 48 270 65 315 18 355 32v138H5Z"/><path class="line" d="M5 145 50 120 90 132 135 80 180 100 225 48 270 65 315 18 355 32"/></svg><span>+٢٤٪</span></div>
+      </section>
+      <section class="metrics" aria-label="مؤشرات الأداء">
+        <article class="metric"><div class="metric-top"><span>إجمالي المبيعات</span><b>ج.م</b></div><strong id="revenue">٥٤٬٣٠٠</strong><small class="positive">↑ ٩٪ <span>عن الفترة السابقة</span></small><div class="mini-chart chart-revenue"></div></article>
+        <article class="metric"><div class="metric-top"><span>إجمالي الزيارات</span><b>↗</b></div><strong id="visits">١٢٬٨٤٠</strong><small class="positive">↑ ١٨٪ <span>عن الفترة السابقة</span></small><div class="mini-chart chart-one"></div></article>
+        <article class="metric"><div class="metric-top"><span>الطلبات</span><b>▣</b></div><strong id="orders">٣٨٦</strong><small class="positive">↑ ١٢٪ <span>عن الفترة السابقة</span></small><div class="mini-chart chart-two"></div></article>
+        <article class="metric"><div class="metric-top"><span>معدل التحويل</span><b>⌁</b></div><strong id="conversion">٤٫٨٪</strong><small class="positive">↑ ٠٫٦٪ <span>عن الفترة السابقة</span></small><div class="mini-chart chart-three"></div></article>
+      </section>
+      <section class="report" id="reports">
+        <div class="report-head"><div><p class="eyebrow">التقرير</p><h2>الزيارات خلال الوقت</h2></div><div class="filters" role="group" aria-label="اختيار فترة التقرير"><button class="filter active" data-range="7">٧ أيام</button><button class="filter" data-range="30">٣٠ يوم</button><button class="filter" data-range="90">٩٠ يوم</button></div></div>
+        <div class="chart"><div class="chart-labels"><span>١٦ ألف</span><span>١٢ ألف</span><span>٨ آلاف</span><span>٤ آلاف</span><span>٠</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 800 240" preserveAspectRatio="none" aria-label="رسم بياني للزيارات"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#9589ff" stop-opacity=".28"/><stop offset="1" stop-color="#9589ff" stop-opacity="0"/></linearGradient></defs><path class="chart-fill" d="M0 195C55 180 65 120 125 142S200 174 260 112 325 145 385 95 450 130 510 72 580 110 640 55 720 82 800 18V240H0Z"/><path class="chart-line" d="M0 195C55 180 65 120 125 142S200 174 260 112 325 145 385 95 450 130 510 72 580 110 640 55 720 82 800 18"/></svg><div class="x-labels"><span>الأحد</span><span>الإثنين</span><span>الثلاثاء</span><span>الأربعاء</span><span>الخميس</span><span>الجمعة</span><span>السبت</span></div></div></div>
+      </section>
+      <section class="widgets-grid">
+        <div class="data-panel" id="products">
+          <div class="report-head"><div><p class="eyebrow">نظرة سريعة</p><h2>أفضل المنتجات</h2></div><a href="#products">عرض الكل ↗</a></div>
+          <div class="table-wrap">
+            <table id="products-table">
+              <thead><tr><th>المنتج</th><th>المبيعات</th><th>الحالة</th></tr></thead>
+              <tbody>
+                <tr class="product-row" data-search="مزهرية هدوء ديكور منزلي"><td><span class="table-product vase-thumb">ف</span><span>مزهرية هدوء<small>ديكور منزلي</small></span></td><td>١٢٬٤٨٠ ج.م</td><td><span class="status-tag">نشط</span></td></tr>
+                <tr class="product-row" data-search="مصباح مساء إضاءة"><td><span class="table-product lamp-thumb">م</span><span>مصباح مساء<small>إضاءة</small></span></td><td>٩٬٢٠٠ ج.م</td><td><span class="status-tag">نشط</span></td></tr>
+                <tr class="product-row" data-search="وعاء يومي مطبخ"><td><span class="table-product bowl-thumb">و</span><span>وعاء يومي<small>مطبخ</small></span></td><td>٧٬٥٦٠ ج.م</td><td><span class="status-tag">نشط</span></td></tr>
+                <tr id="no-results" hidden><td colspan="3" class="no-results">مفيش منتج مطابق. جرّب: مزهرية، مصباح، أو وعاء.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="data-panel sources-panel">
+          <div class="report-head"><div><p class="eyebrow">القنوات</p><h2>مصادر الزيارات</h2></div></div>
+          <div class="source-row"><span class="source-icon source-search">⌕</span><span class="source-name">بحث مباشر</span><b>٤٢٪</b><div class="source-track"><i class="source-42"></i></div></div>
+          <div class="source-row"><span class="source-icon source-social">◎</span><span class="source-name">التواصل الاجتماعي</span><b>٣١٪</b><div class="source-track"><i class="source-31"></i></div></div>
+          <div class="source-row"><span class="source-icon source-referral">↗</span><span class="source-name">روابط خارجية</span><b>١٧٪</b><div class="source-track"><i class="source-17"></i></div></div>
+          <div class="source-row"><span class="source-icon source-email">✉</span><span class="source-name">البريد الإلكتروني</span><b>١٠٪</b><div class="source-track"><i class="source-10"></i></div></div>
+        </div>
+      </section>
+      <section class="activity" id="activity"><div class="report-head"><div><p class="eyebrow">آخر التحديثات</p><h2>النشاط الأخير</h2></div><a href="#activity">عرض الكل ↗</a></div><div class="activity-row"><span class="activity-icon purple">↗</span><div><b>زيادة في الزيارات</b><small>الزيارات أعلى من الأسبوع الماضي</small></div><time>منذ ساعتين</time></div><div class="activity-row"><span class="activity-icon green">✓</span><div><b>تم تحديث التقرير</b><small>أرقام هذا الأسبوع جاهزة</small></div><time>منذ ٥ ساعات</time></div></section>
+      <footer><a href="../../index.html">← العودة لمعرض مروان</a><span>مسار · لوحة تحكم تجريبية</span></footer>
+    </main>
+  </div>
+</body>
+</html>

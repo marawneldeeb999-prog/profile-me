@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eee4">
+  <title>يوم — عادات صغيرة، فرق كبير</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home"><span class="brand-mark">ي</span> يوم</a>
+    <span class="date-label" id="today-label">روتينك اليومي</span>
+    <a class="back-link" href="../../index.html">معرض مروان ↗</a>
+  </header>
+  <main id="home">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">خطوة صغيرة كل يوم</p>
+        <h1>يومك أحلى<br><span>بعاداتك.</span></h1>
+        <p class="welcome-copy">مش لازم تعمل كل حاجة مرة واحدة. اختار عادة صغيرة وابدأ من هنا.</p>
+      </div>
+      <img class="sunrise-art" src="images/vintage-sunrise.svg" alt="ملصق كلاسيكي لشروق الشمس فوق الجبال">
+    </section>
+    <section class="progress-panel" aria-live="polite">
+      <div class="progress-copy"><div><p class="eyebrow">تقدم النهارده</p><h2><span id="completed-count">0</span> من <span id="total-count">4</span> عادات</h2></div><strong id="progress-percent">0%</strong></div>
+      <div class="progress-track"><span id="progress-fill"></span></div>
+      <p class="encouragement" id="encouragement">ابدأ بأول عادة، والباقي هييجي واحدة واحدة.</p>
+    </section>
+    <section class="habit-section">
+      <div class="section-head"><div><p class="eyebrow">قائمة اليوم</p><h2>عاداتك الصغيرة</h2></div><span class="streak">✦ <b id="streak-count">0</b> مكتملة</span></div>
+      <div class="habit-list" id="habit-list">
+        <label class="habit-card"><input type="checkbox" class="habit-check"><span class="habit-icon water">◌</span><span class="habit-text"><b>اشرب مية</b><small>كوباية أول ما تصحى</small></span><span class="habit-time">٢ دقايق</span></label>
+        <label class="habit-card"><input type="checkbox" class="habit-check"><span class="habit-icon read">▤</span><span class="habit-text"><b>اقرأ شوية</b><small>١٠ صفحات من كتابك</small></span><span class="habit-time">١٠ دقايق</span></label>
+        <label class="habit-card"><input type="checkbox" class="habit-check"><span class="habit-icon walk">↗</span><span class="habit-text"><b>اتحرك</b><small>مشي خفيف في الهوا</small></span><span class="habit-time">١٥ دقيقة</span></label>
+        <label class="habit-card"><input type="checkbox" class="habit-check"><span class="habit-icon calm">✳</span><span class="habit-text"><b>خد نفس</b><small>دقيقة هدوء لنفسك</small></span><span class="habit-time">١ دقيقة</span></label>
+      </div>
+      <form class="add-form" id="add-form">
+        <label class="visually-hidden" for="new-habit">اسم العادة الجديدة</label>
+        <input id="new-habit" type="text" maxlength="40" placeholder="ضيف عادة صغيرة..." required>
+        <button type="submit" aria-label="إضافة عادة">+</button>
+      </form>
+    </section>
+    <aside class="note"><span>✿</span><p>الاستمرارية أهم من الكمال.<br><b>افتكر تحتفل بكل خطوة.</b></p></aside>
+  </main>
+  <footer><span>© يوم — خطوة بخطوة</span><a href="../../index.html">العودة لمعرض مروان</a></footer>
+</body>
+</html>

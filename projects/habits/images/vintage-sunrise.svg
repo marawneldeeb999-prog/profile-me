@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ead9bd"/><stop offset=".68" stop-color="#f0c99a"/><stop offset="1" stop-color="#d49668"/></linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e6ab69"/><stop offset="1" stop-color="#c87652"/></linearGradient>
+    <pattern id="grain" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".7" fill="#584833" opacity=".16"/><circle cx="9" cy="8" r=".55" fill="#584833" opacity=".12"/></pattern>
+    <clipPath id="frame"><rect x="22" y="22" width="956" height="556" rx="4"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="600" fill="#e9dcc6"/>
+    <rect x="22" y="22" width="956" height="556" fill="url(#sky)"/>
+    <path d="M22 347 157 239l91 69 151-155 168 194 127-143 110 112 102-88 72 69v202H22V347Z" fill="#a8987b"/>
+    <path d="m306 285 93-132 107 194 62-69 111 42 100-87 119 108v130H245l61-186Z" fill="#877e69" opacity=".82"/>
+    <circle cx="691" cy="244" r="104" fill="url(#sun)"/>
+    <path d="M22 393c113-72 226-70 345-24 112 43 213 47 328-9 101-49 188-49 283-5v223H22V393Z" fill="#9b9b78"/>
+    <path d="M22 438c139-51 250-41 354 8 103 49 211 47 315-2 99-47 194-45 287 3v131H22V438Z" fill="#65785e"/>
+    <path d="M22 508c121-47 231-37 334 8 122 54 241 51 366-5 93-41 174-38 256-1v68H22v-70Z" fill="#3f574b"/>
+    <path d="M104 465 137 378l33 87h-22l36 72h-93l35-72h-22Zm125 0 26-69 27 69h-18l31 62h-79l31-62h-18Zm586 8 31-81 31 81h-20l35 70h-92l35-70h-20Zm93 1 24-64 25 64h-16l29 57h-71l29-57h-20Z" fill="#344b41"/>
+    <path d="M22 518h956v60H22z" fill="#3d4c40"/>
+    <text x="58" y="555" fill="#f1dfbf" font-family="Georgia,serif" font-size="24" letter-spacing="6">TAKE IT SLOW</text>
+    <text x="938" y="554" fill="#d2bd98" font-family="Georgia,serif" font-size="13" letter-spacing="3" text-anchor="end">DAY / 01</text>
+    <rect width="1000" height="600" fill="url(#grain)" opacity=".55"/>
+  </g>
+  <rect x="22" y="22" width="956" height="556" rx="4" stroke="#705b43" stroke-width="2"/>
+  <rect x="31" y="31" width="938" height="538" rx="2" stroke="#f0dfc1" stroke-opacity=".75" stroke-width="1"/>
+</svg>
